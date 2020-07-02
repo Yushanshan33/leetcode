@@ -1,0 +1,8 @@
+一、低阶api
+1、op
+2、session
+3、graph
+图只是定义了operation,要在session里把她执行起来
+二、高级封装
+2.1 keras
+2.2 estimator
