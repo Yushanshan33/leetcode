@@ -1,0 +1,29 @@
+0.版本tensorflow=2.0
+1.获得训练数据
+这里随后便
+2、构建keras网络
+import tensorflow as tf
+from tensorflow.kerea.layers as layers
+
+model = tf.keras.Sequential()
+model.add(layers.Dense()，activation = 'softmax'))
+
+3、配置模型的学习流程
+model.compile(optimizer = tf.keras.optimitors.Adam(0.001),
+             loss=tf.keras.losses.categorical_crossentropy,
+             metrics=[tf.keras.metrics.categorical_accuracy])
+ 
+4、传入训练数据训练模型
+model.fit(train_data,train_y,epochs = 5,batch_size = 10)
+
+
+二、生成savedmodel复用
+1、将上部分生成的model以savedmodel的格式保存
+   tf.saved_model.save(model,'D://modelrepo//')
+2、加载模型推理
+   loadmodel = tf.saved_model.load('D://modelrepo//testmodel')
+3、进行推理
+   testdata=np.random.random((1,74))
+   testdata = testdata.tolist()
+   loadmodel(testdata)
+   
