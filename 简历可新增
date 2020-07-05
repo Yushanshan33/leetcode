@@ -3,3 +3,8 @@
 3、训练推理一致性，避免重写推理代码
    sklearn---pipeline
    
+一站式AI平台
+项目描述：针对AI人员从数据获取到模型探索、模型部署的整个流程，实现端到端的打通
+个人工作：1、自研业内AI平台如Tensorflow Extended,Sagemaker
+                2、基于jupyter环境设计演示case,根因告警
+                3、开发知识货架微服务接口，
